@@ -1,0 +1,55 @@
+{
+  "name": "Atlas",
+  "role": "Operations assistant",
+  "live": true,
+  "since": "Running since June 2026 · update as of 5 October 2026",
+  "purpose": "Keeps the week organised. Atlas triages the inbox, prepares every external meeting, tracks open projects and drafts replies for review.",
+  "bounds": [
+    "Drafts only — nothing is sent to anyone outside the team without an explicit yes.",
+    "Reads the project tracker and calendar; never deletes records.",
+    "No payments, purchases or account changes."
+  ],
+  "skills": [
+    {"g": "Inbox and meetings", "items": [
+      ["inbox-triage", "Inbox Triage", "Labels new mail with the existing folders and flags anything that needs a reply today."],
+      ["meeting-prep", "Meeting Prep", "A one-page brief 30 minutes before each external meeting."]
+    ]},
+    {"g": "Projects", "items": [
+      ["weekly-review", "Weekly Project Review", "Friday rollup of every active project: what moved, what is stuck, what is due next week."],
+      ["follow-up-drafts", "Follow-Up Drafts", "Drafts follow-ups for threads that have gone quiet for a week."]
+    ]}
+  ],
+  "shared": {
+    "title": "Shared — same in every agent",
+    "items": [
+      ["agent-update", "Agent Update", "This page."],
+      ["status-report", "Status Report", "A short status report on request."]
+    ]
+  },
+  "conn": [
+    ["email", "Email", "MCP server", "Inbox and drafts", "read · draft only"],
+    ["calendar", "Calendar", "MCP server", "Meetings and availability", "read"],
+    ["tracker", "Project Tracker", "CLI", "Projects, tasks and due dates", "read / write"]
+  ],
+  "jobs": [
+    ["Every 30 min", "8 AM–6 PM", "inbox-triage", ""],
+    ["Mon–Fri", "8:30 AM", "meeting-prep", "morning roster, then 30 min ahead", 1],
+    ["Fri", "3:00 PM", "weekly-review", "", 1]
+  ],
+  "jobsNote": "Local time. From the scheduler on 5 October 2026",
+  "accomplished": {
+    "window": "22 September – 5 October 2026",
+    "summary": "Two steady weeks: every external meeting briefed, three stuck projects unblocked, and two replies waiting on you.",
+    "groups": [
+      {"g": "Projects", "items": [
+        {"date": "2 Oct", "title": "Unblocked three stuck projects", "detail": "Found the missing approvals on the website refresh, the Q4 budget and the office move; drafted the chasers you sent.", "result": "3 moving"},
+        {"date": "26 Sep, 3 Oct", "title": "Weekly project review ×2", "detail": "Flagged two projects due within a week that had no owner.", "result": "Report", "url": "https://example.com/weekly-review"}
+      ]},
+      {"g": "Inbox and meetings", "items": [
+        {"date": "22 Sep – 3 Oct", "title": "Briefed 9 external meetings", "detail": "Who is attending, the last conversation with them, and open questions.", "result": "9 briefs"},
+        {"date": "4 Oct", "title": "Two replies drafted", "detail": "A vendor contract question and a conference invite are drafted and waiting for your edit.", "result": "Waiting on you"}
+      ]}
+    ],
+    "footnote": "From scheduled-job history, session transcripts and git history for this window. Routine health checks are not listed."
+  }
+}

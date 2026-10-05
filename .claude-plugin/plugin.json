@@ -1,0 +1,6 @@
+{
+  "name": "agent-update",
+  "description": "A one-page update from your agent: what it is, what it owns, its skills, connectors and schedule, and what it accomplished for you in the last two weeks.",
+  "version": "1.0.0",
+  "license": "MIT"
+}

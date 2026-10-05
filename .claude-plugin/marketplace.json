@@ -1,0 +1,11 @@
+{
+  "name": "agent-update",
+  "owner": {"name": "mgoh99"},
+  "plugins": [
+    {
+      "name": "agent-update",
+      "source": "./",
+      "description": "A one-page update from your agent, including what it accomplished for you in the last two weeks."
+    }
+  ]
+}

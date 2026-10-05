@@ -41,7 +41,7 @@ python3 skills/agent-update/scripts/build.py skills/agent-update/references/exam
 | `skills/agent-update/assets/style.css` | The page design |
 | `skills/agent-update/references/example.json` | Data shape, with fictional sample data |
 
-The sample agent "Atlas" and everything it did are made up.
+The sample agent "Friday" and everything it did are made up.
 
 ## License
 

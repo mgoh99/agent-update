@@ -1,9 +1,9 @@
 {
-  "name": "Atlas",
+  "name": "Friday",
   "role": "Operations assistant",
   "live": true,
   "since": "Running since June 2026 · update as of 5 October 2026",
-  "purpose": "Keeps the week organised. Atlas triages the inbox, prepares every external meeting, tracks open projects and drafts replies for review.",
+  "purpose": "Keeps the week organised. Friday triages the inbox, prepares every external meeting, tracks open projects and drafts replies for review.",
   "bounds": [
     "Drafts only — nothing is sent to anyone outside the team without an explicit yes.",
     "Reads the project tracker and calendar; never deletes records.",
